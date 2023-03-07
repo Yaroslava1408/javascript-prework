@@ -1,66 +1,91 @@
+"use strict";
+// Це коментар. Далі йде увесь код JS-файлу
+function getMoveName(){}
+
 let randomNumber = Math.floor(Math.random() * 3 + 1);
+console.log('The number is: ' + randomNumber);
 
-console.log('Wylosowana liczba to: ' + randomNumber);
-
-let computerMove = 'unknown move';
-
-
+/*
 if(randomNumber == 1){
-  computerMove = 'rock';
+  argComputerMove = 'rock';
 }
 else if (randomNumber == 2){
-    computerMove = 'paper';
+  argComputerMove = 'paper';
   }
 
 else if (randomNumber == 3){
-    computerMove = 'scissors';
-  }  
-printMessage('My move is: ' + computerMove);
+  argComputerMove = 'scissors';
+}  
+
+printMessage('My move is: ' + argComputerMove);*/
+
+let argComputerMove = getMoveName(randomNumber);
+
+function getMoveName (argComputerMove) {
+if (argComputerMove  == 1){
+  return 'rock';
+}
+else if (argComputerMove  == 2){
+  return 'paper';
+  }
+
+else if (argComputerMove  == 3){
+  return'scissors';
+} 
+} 
+getMoveName (argComputerMove);
+printMessage('My move is: ' + argComputerMove);
+
 
 let playerInput = prompt('Choose your move! 1: rock, 2: paper, 3: scissors.');
+console.log('The player chose: ' + playerInput);
 
-console.log('Gracz wpisał: ' + playerInput);
+let argPlayerMove = getMoveName(playerInput);
+printMessage('Your move is: ' + argPlayerMove);
 
-let playerMove = 'unknown move';
 
-if(playerInput == '1'){
-  playerMove = 'rock';
+/*if(playerInput == '1'){
+  
+  argPlayerMove = 'rock';
 }
 
 else if (playerInput == '2'){
-    playerMove = 'paper';
+    
+  argPlayerMove = 'paper';
   }
 else if (playerInput == '3'){
-    playerMove = 'scissors';
-  }
-printMessage('Your move is: ' + playerMove);
+  argPlayerMove = 'scissors';
+  }*/
 
+function displayResult (argComputerMove, argPlayerMove) {
+  console.log('moves:', argComputerMove, argPlayerMove);
+  printMessage('I choose ' + argComputerMove + ', and you ' + argPlayerMove);
 
-if(computerMove == 'rock' && playerMove == 'paper'){
+if(argComputerMove == 'rock' && argPlayerMove == 'paper'){
     printMessage('You win!');
   }
-else if(computerMove == 'paper' && playerMove == 'scissors'){
+else if(argComputerMove == 'paper' && argPlayerMove == 'scissors'){
     printMessage('You win!');
   }
-else if(computerMove == 'scissors' && playerMove == 'rock'){
+else if(argComputerMove == 'scissors' && argPlayerMove == 'rock'){
     printMessage('You win!');
   }
-else if(computerMove == 'paper' && playerMove == 'rock'){
+else if(argComputerMove == 'paper' && argPlayerMove == 'rock'){
     printMessage('You lose!');
   }
-else if(computerMove == 'scissors' && playerMove == 'paper'){
+else if(argComputerMove == 'scissors' && argPlayerMove == 'paper'){
     printMessage('You lose!');
   }
-else if(computerMove == 'rock' && playerMove == 'scissors'){
+else if(argComputerMove == 'rock' && argPlayerMove == 'scissors'){
     printMessage('You lose!');
   }
-else if(computerMove == 'rock' && playerMove == 'rock'){
+else if(argComputerMove == 'rock' && argPlayerMove == 'rock'){
     printMessage('A draw!');
 }
-else if(computerMove == 'paper' && playerMove == 'paper'){
+else if(argComputerMove == 'paper' && argPlayerMove == 'paper'){
     printMessage('A draw!');
 }
-else if(computerMove == 'scissors' && playerMove == 'scissors'){
+else if(argComputerMove == 'scissors' && argPlayerMove == 'scissors'){
     printMessage('A draw!');
 }
 
@@ -71,6 +96,14 @@ else if(playerInput >3){
 else if(playerInput <1){    
     printMessage('Please, use number from 1 to 3');
 }
+}
+displayResult (argComputerMove, argPlayerMove);
+
+console.log (getMoveName ('2'));
+
+
+
+
 
 
 
