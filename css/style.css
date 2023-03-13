@@ -1,3 +1,19 @@
-h1{text-align:center;color:aqua}#buttons{text-align:center}button{color:#00008b}
+h1 {
+  text-align: center;
+  color: aqua;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxHQUFHLGlCQUFpQixDQUFDLFVBQVUsQ0FBQyxTQUFTLGlCQUFpQixDQUFDLE9BQU8sYUFBYSIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJoMXt0ZXh0LWFsaWduOmNlbnRlcjtjb2xvcjphcXVhfSNidXR0b25ze3RleHQtYWxpZ246Y2VudGVyfWJ1dHRvbntjb2xvcjojMDAwMDhifVxuIl19 */
+#buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  color: darkblue;
+}
+
+body {
+  text-align: center;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNBLGtCQUFBO0VBQ0EsV0FBQTtBQ0NBOztBREVBO0VBQ0ksa0JBQUE7RUFDQSxtQkFBQTtBQ0NKOztBRENBO0VBQ0ksZUFBQTtBQ0VKOztBRENBO0VBQ0ksa0JBQUE7QUNFSiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */

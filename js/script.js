@@ -1,8 +1,7 @@
 "use strict";
 // Це коментар. Далі йде увесь код JS-файлу
 
-function playGame(playerInput){  
-  
+function playGame(playerInput){    
     function getMoveName (argMoveId) {
     if (argMoveId  == 1){
     return 'rock';
@@ -14,16 +13,16 @@ function playGame(playerInput){
     return'scissors';
     } 
   } 
-  
+
   clearMessages();
 
   let randomNumber = Math.floor(Math.random() * 3 + 1);
   console.log('The number is: ' + randomNumber);
 
-  let argComputerMove = getMoveName (randomNumber);
+  const argComputerMove = getMoveName (randomNumber);
   printMessage('My move is: ' + argComputerMove);
  
- let argPlayerMove = getMoveName(playerInput);
+  const argPlayerMove = getMoveName(playerInput);
   printMessage('Your move is: ' + argPlayerMove); 
   
 
